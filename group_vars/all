@@ -1,0 +1,16 @@
+# EC2 instance variable
+
+ec2:
+  region: ap-southeast-1
+  image: ami-c18cbebd
+  credentials: arun_key
+  sg: launch-wizard-2
+  instance_type: t2.micro
+  subnet: subnet-64b08d03
+  public_ip: yes
+  tags:
+    Name: ArunEc2Ansible
+  volumes:
+    - device_name: /dev/xvda
+      volume_type: standard
+      volume_size: 8
